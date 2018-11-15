@@ -9,6 +9,7 @@ import { SwimDayList } from "./components/SwimDayList";
 render(
   <React.Fragment>
     {/* <AsClass total={50} shark={20} current={30} goal={100} /> */}
+    <AsFunction />
     <AsFunction total={50} shark={20} current={30} goal={100} />
     <SwimDayList
       days={[

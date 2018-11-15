@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import "../style/ui.scss";
 import { IoIosWater } from "react-icons/io";
 import { FaCalendarCheck } from "react-icons/fa";
@@ -12,6 +12,14 @@ const calcGoal = (total, goal) => {
 };
 
 export const AsFunction = props => (
+  //can do default proprs here, standard es6
+  // export const AsFunction = ({
+  // total= 0,
+  // shark= 0,
+  // current= 0,
+  // goal= 10
+  // }) => (
+
   <div className="swim-day-count">
     <div className="total-days">
       <IoIosWater />
@@ -35,4 +43,14 @@ export const AsFunction = props => (
     </div>
   </div>
 );
+
+// other default props option
+// AsFunction.defaultProps = {
+//   total: 0,
+//   shark: 0,
+//   current: 0,
+//   goal: 10
+// };
+// other default props option
+
 export default AsFunction;

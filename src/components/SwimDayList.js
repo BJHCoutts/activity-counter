@@ -18,10 +18,11 @@ export const SwimDayList = ({ days }) => (
       {days.map((day, i) => (
         <SwimDayRow
           key={i}
-          ocean={day.ocean}
-          date={day.date}
-          waves={day.waves}
-          salty={day.salty}
+          // ocean={day.ocean}
+          // date={day.date}
+          // waves={day.waves}
+          // salty={day.salty}
+          {...day}
         />
       ))}
     </tbody>
